@@ -1,0 +1,38 @@
+[
+  {
+    "group": "Juniors",
+    "age": "7-14",
+    "classes": [
+      {
+        "section": "Beginning",
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=1919938"
+      },
+      {
+        "section": "Continuing",
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=1919948"
+      },
+      {
+        "section": "Advanced",
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=1919958"
+      }
+    ]
+  },
+  {
+    "group": "Adults",
+    "age": "15+",
+    "classes": [
+      {
+        "section": "Beginning",
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=2071898"
+      },
+      {
+        "section": "Continuing",
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=2071890"
+      },
+      {
+        "section": "Advanced",
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=2071846"
+      }
+    ]
+  }
+]
