@@ -9,7 +9,7 @@ const FAQ = () => {
       {faqData.map((group) => (
         <>
           <h6>{group.header}</h6>
-          <Accordion flush className="mb-5">
+          <Accordion flush className="mb-5 accordion">
             {group.questions.map((questions) => (
               <Accordion.Item eventKey={questions.key}>
                 <Accordion.Header><em>{questions.question}</em></Accordion.Header>

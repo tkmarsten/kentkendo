@@ -17,7 +17,8 @@ const Membership = () => {
                   {section.classes.map((classes) => (
                     <ListGroup.Item>
                       <Button variant="primary"
-                        href={classes.url}>
+                        href={classes.url}
+                        target="_blank">
                         {classes.section}
                       </Button>
                     </ListGroup.Item>

@@ -6,6 +6,7 @@ import FAQ from './FAQ'
 import Terms from './Terms'
 import Footer from '../components/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react'
 
 function App() {
   return (

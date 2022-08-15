@@ -5,15 +5,15 @@
     "classes": [
       {
         "section": "Beginning",
-        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=1919938"
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=3468743&_csrf_token=6f619d92fd82c66de4b161013e2f70ab3d25cfd3f2ca73e1925e1b02dede48de"
       },
       {
         "section": "Continuing",
-        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=1919948"
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=3468769&_csrf_token=dc1c7ec7eb7711816bc16c99c31070bfd831bc9a354d67b9d076b17ec14c04d7"
       },
       {
         "section": "Advanced",
-        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=1919958"
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=3468783&_csrf_token=dc1c7ec7eb7711816bc16c99c31070bfd831bc9a354d67b9d076b17ec14c04d7"
       }
     ]
   },
@@ -23,15 +23,15 @@
     "classes": [
       {
         "section": "Beginning",
-        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=2071898"
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=3467721&_csrf_token=dc1c7ec7eb7711816bc16c99c31070bfd831bc9a354d67b9d076b17ec14c04d7"
       },
       {
         "section": "Continuing",
-        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=2071890"
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=3467742&_csrf_token=dc1c7ec7eb7711816bc16c99c31070bfd831bc9a354d67b9d076b17ec14c04d7"
       },
       {
         "section": "Advanced",
-        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?module=AR&fmid=2071846"
+        "url": "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=3467748&_csrf_token=dc1c7ec7eb7711816bc16c99c31070bfd831bc9a354d67b9d076b17ec14c04d7"
       }
     ]
   }

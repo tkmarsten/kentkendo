@@ -1,12 +1,13 @@
 import { Container, Navbar, Nav, NavDropdown, Offcanvas } from 'react-bootstrap'
+import dojoData from '../data/dojo.json'
 
 const NavBar = () => {
   return (
     <>
       <Navbar bg="light" expand={false} fixed="top">
         <Container fluid>
-          <Navbar.Brand href="#">
-            <img alt="logo" src="img/logo.gif" width="35" height="40" />
+          <Navbar.Brand href="/">
+            <img alt="logo" src={`img/` + dojoData.logo} width="35" height="40" />
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Offcanvas
@@ -22,7 +23,7 @@ const NavBar = () => {
                   <NavDropdown.Item href="/terms">Terms</NavDropdown.Item>
                   <NavDropdown.Item href="https://youtu.be/cpidZRL5ZbI" target="_blank">Warmup</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="https://calendar.google.com/calendar/b/3?cid=a2VudGtlbmRvY2x1YkBnbWFpbC5jb20" target="_blank">Calendar</Nav.Link>
+                <Nav.Link href={dojoData.calendar} target="_blank">Calendar</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
