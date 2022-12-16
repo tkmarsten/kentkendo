@@ -27,12 +27,15 @@ footer {
   border-color: #00aeff;
 }
 
+.navbar {
+  background: transparent !important;
+}
+
 .nav-link {
   color: black !important;
 }
 
 /* Index */
-
 header.masthead {
   position: relative;
   background: url("../public/img/banner-alt.jpg") no-repeat center center;
@@ -66,7 +69,6 @@ header.masthead h3 {
 }
 
 /* About */
-
 .banner {
   border-bottom: 10px solid;
   border-color: #f22626;

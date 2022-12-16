@@ -3,7 +3,7 @@ import dojoData from '../data/dojo.json'
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand={false} sticky="top">
+    <Navbar expand={false} sticky="top">
       <Container fluid>
         <Navbar.Brand href="/">
           <img alt="logo" src={`img/` + dojoData.logo} width="35" height="40" />
