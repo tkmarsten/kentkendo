@@ -13,14 +13,12 @@ function App() {
     <Router>
       <div className="App">
         <NavBar />
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/terms" element={<Terms />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/terms" element={<Terms />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
