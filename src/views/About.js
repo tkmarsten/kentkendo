@@ -1,15 +1,16 @@
 import Banner from '../components/Banner'
-import Sensei from '../components/Sensei'
 import Affiliations from '../components/Affiliations'
-import { Container } from 'react-bootstrap'
+import Sensei from '../components/Sensei'
+import { Box } from '@chakra-ui/react'
+
 
 const About = () => {
   return (
-    <div className="text-center">
+    <Box align='center'>
       <Banner />
       <Sensei />
       <Affiliations />
-    </div>
+    </Box>
   )
 }
 
