@@ -22,53 +22,33 @@ i {
   color: white;
 }
 
-footer {
-  border-top: 10px solid;
-  border-color: #00aeff;
+a {
+  text-decoration: none !important;
 }
 
-.navbar {
-  background: transparent !important;
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
 }
 
 .nav-link {
-  color: black !important;
+  margin: 1rem;
 }
 
 /* Index */
-header.masthead {
-  position: relative;
+header {
+  height: 100vh;
   background: url("../public/img/banner-alt.jpg") no-repeat center center;
   background-size: cover;
-  padding: 8rem 0;
+  display: grid;
+  place-content: center;
+  color: white;
 }
 
-header.masthead h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  header.masthead {
-    padding: 12rem 0;
-  }
-
-  header.masthead h1 {
-    font-size: 5rem;
-  }
-
-  header.masthead h3 {
-    font-size: 1.5rem;
-  }
-}
-
-.announcements {
-  border-bottom: 10px solid;
-  border-color: #f22626;
-}
-
-/* About */
+.announcements,
 .banner {
   border-bottom: 10px solid;
   border-color: #f22626;
@@ -82,4 +62,9 @@ header.masthead h3 {
 /* FAQ */
 .terms {
   min-height: 100vh;
+}
+
+footer {
+  border-top: 10px solid;
+  border-color: #00aeff;
 }
