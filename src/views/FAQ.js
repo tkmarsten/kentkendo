@@ -2,7 +2,6 @@ import faqData from '../data/faq.json'
 import { Flex, Box, Container, Heading, Accordion, AccordionItem, AccordionPanel, AccordionButton, AccordionIcon } from '@chakra-ui/react'
 
 const FAQ = () => {
-
   return (
     <Flex align='start'>
       <Container className='faq'>

@@ -64,16 +64,3 @@ const Dojo = () => {
 }
 
 export default Dojo
-
-
-/*
-    <Card.Header>Monday</Card.Header>
-    <ListGroup className="list-group-flush">
-      <ListGroupItem>Beginning 6:30-7:15pm</ListGroupItem>
-      <ListGroupItem>Continuing 7:15-8pm</ListGroupItem>
-    </ListGroup>
-    <Card.Header>Wednesday</Card.Header>
-    <ListGroup className="list-group-flush">
-      <ListGroupItem>Advanced 6:30-8pm</ListGroupItem>
-    </ListGroup>
-     */

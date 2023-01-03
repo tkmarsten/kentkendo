@@ -3,7 +3,6 @@ import SenseiCard from './SenseiCard'
 import { Container, Heading, Grid, Box, GridItem } from '@chakra-ui/react'
 
 const Sensei = () => {
-
   return (
     <Box bg='gray.100' py='4rem' align='center'>
       <Container>

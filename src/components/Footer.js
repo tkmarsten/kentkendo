@@ -17,7 +17,7 @@ const Footer = () => {
             </Stack>
           </GridItem>
         </Grid>
-        <Text>&copy; 2022 {dojoData.dojo} Kendo Club</Text>
+        <Text>&copy; 2023 {dojoData.dojo} Kendo Club</Text>
       </Container>
     </Box>
   )
