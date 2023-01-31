@@ -64,6 +64,19 @@ header {
   min-height: 100vh;
 }
 
+.galleryCaption {
+  display: none;
+  color: white;
+}
+
+.galleryImg:hover {
+  filter: brightness(50%);
+}
+
+.galleryItem:hover .galleryCaption {
+  display: block;
+}
+
 footer {
   border-top: 10px solid;
   border-color: #00aeff;

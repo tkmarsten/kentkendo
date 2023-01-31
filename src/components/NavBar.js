@@ -46,6 +46,7 @@ const NavBar = () => {
                     <Link href='https://youtu.be/cpidZRL5ZbI' isExternal><MenuItem>Warmup<ExternalLinkIcon mx='2px' /></MenuItem></Link>
                   </MenuList>
                 </Menu>
+                <Link as={RouterLink} to='/gallery' className='nav-link'>Gallery</Link>
                 <Link href={dojoData.calendar} isExternal className='nav-link'>
                   Calendar <ExternalLinkIcon mx='2px' />
                 </Link>
