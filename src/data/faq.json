@@ -4,7 +4,7 @@
     "questions": [
       {
         "key": "0",
-        "question": "Can I join kendo if I am ___?",
+        "question": "Can I join kendo if I am _____?",
         "answer": "Anyone regardless of age, gender, or physical ability may start kendo."
       },
       {
@@ -15,7 +15,7 @@
       {
         "key": "2",
         "question": "When can my child start kendo?",
-        "answer": "Children may start as young as 7, but this depends on the maturity of the child."
+        "answer": "Children may start as young as 7, but this can depend on the maturity of your child."
       },
       {
         "key": "3",
@@ -29,8 +29,13 @@
       },
       {
         "key": "5",
-        "question": "Where can I get extra practice?",
-        "answer": "You may always practice at home by yourself. Until you reach armor and are a member of the local federation, you cannot practice at other dojos. If you are currently a student at our club, you may be able to join practice at the other dojo we teach at."
+        "question": "Should I do anything before starting kendo?",
+        "answer": "Kendo can be very aerobic and anaerobic. Cardio is always a great starter to help with your endurance."
+      },
+      {
+        "key": "6",
+        "question": "Does kendo hurt?",
+        "answer": "Kendo is a full-contact martial art and can hurt. Bruises are not uncommon and can be caused from the shinai. We teach our students to learn to control the shinai and minimize injuries."
       }
     ]
   },
@@ -45,12 +50,17 @@
       {
         "key": "1",
         "question": "Can I join practice if I am not from the local area?",
-        "answer": "Yes, please contact us before joining practice."
+        "answer": "Yes! Please contact us with details of your experience level before you join our practice."
       },
       {
         "key": "2",
         "question": "What other events can I participate in?",
         "answer": "If you have valid federation membership, you may also participate in rank tests, seminars, and tournaments. You may also be able to sometimes attend these events even if they are not in the local area."
+      },
+      {
+        "key": "3",
+        "question": "Where can I get extra practice?",
+        "answer": "You may always practice at home by yourself. Until you reach armor and are a member of the local federation, you cannot practice at other dojos. If you are currently a student at our club, you may be able to join practice at the other dojo we teach at."
       }
     ]
   },
@@ -64,23 +74,38 @@
       },
       {
         "key": "1",
-        "question": "How much does equipment cost?",
-        "answer": "At first, the only equipment to be purchased is a shinai (bamboo sword). These cost $25 and are provided by the club. Additional equipment, such as armor, may be purchased or rented from us later."
+        "question": "How much does a shinai (sword) cost?",
+        "answer": "Shinai may be purchased from us for $25. If you are just beginning kendo, this will be a one time purchase."
+      },
+      {
+        "key": "2",
+        "question": "How much does a uniform cost?",
+        "answer": "Keiko-gi and hakama can be bought together for about $90. A uniform is not required until a student finishes their second quarter."
+      },
+      {
+        "key": "3",
+        "question": "How much does bogu (armor) cost?",
+        "answer": "A bogu set can typically cost $300-$400 for a beginning set. Bogu sets can be rented from the club which is recommended for at least the first year of advanced class."
       }
     ]
   },
   {
-    "header": "Shinai",
+    "header": "Shinai (sword)",
     "questions": [
       {
         "key": "0",
         "question": "What is the shinai made of?",
-        "answer": "It is four bamboo slats put together."
+        "answer": "Shinai is made from bamboo. It consists of four bamboo slats put together."
+      },
+      {
+        "key": "1",
+        "question": "How long do shinai last?",
+        "answer": "With regular maintenance, shinai can last up to a year. This can depend on practice frequency, weather, and strength of your own hits."
       }
     ]
   },
   {
-    "header": "Armor",
+    "header": "Bogu (armor)",
     "questions": [
       {
         "key": "0",
