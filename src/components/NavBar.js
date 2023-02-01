@@ -13,7 +13,9 @@ const NavBar = () => {
 
   return (
     <Flex as={'nav'} p={3}>
-      <Image src={`img/` + dojoData.logo} alt="logo" w='35px' h='40px' />
+      <Link as={RouterLink} to='/'>
+        <Image src={`img/` + dojoData.logo} alt="logo" w='35px' h='40px' />
+      </Link>
       <Spacer />
       <Menu>
         <MenuButton
