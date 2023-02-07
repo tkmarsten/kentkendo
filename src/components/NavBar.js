@@ -12,7 +12,7 @@ const NavBar = () => {
   const btnRef = useRef()
 
   return (
-    <Flex as={'nav'} p={3}>
+    <Flex as='nav' p={3}>
       <Link as={RouterLink} to='/'>
         <Image src={`img/` + dojoData.logo} alt="logo" w='35px' h='40px' />
       </Link>

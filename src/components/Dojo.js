@@ -5,7 +5,7 @@ import { FiClock } from 'react-icons/fi'
 const Dojo = () => {
   return (
     <Container my='4rem'>
-      <Heading as={'h3'} mb='2rem'>Our Dojo</Heading>
+      <Heading as='h3' mb='2rem'>Our Dojo</Heading>
       <Grid gap={10}
         templateAreas={{
           base: `"map"
@@ -17,20 +17,21 @@ const Dojo = () => {
             `"info map"
             "clock clock"
             "monday wednesday"`}}>
-        <GridItem area={'map'}>
+        <GridItem area='map'>
           <iframe
             src={dojoData.map}
             title="map">
           </iframe>
         </GridItem>
-        <GridItem area={'info'}>
+        <GridItem area='info'>
           <Stack align='center'>
             <Text>{dojoData.facility}</Text>
             <Text>{dojoData.room}</Text>
             <Text>{dojoData.address}</Text>
             <Link href={dojoData.website} isExternal><Button>Website</Button></Link>
-          </Stack></GridItem>
-        <GridItem area={'monday'}>
+          </Stack>
+        </GridItem>
+        <GridItem area='monday'>
           <Stack align='center'>
             <Text as='b'>Monday</Text>
             <Grid gap={1}>
@@ -45,10 +46,10 @@ const Dojo = () => {
             </Grid>
           </Stack>
         </GridItem>
-        <GridItem area={'clock'}>
+        <GridItem area='clock'>
           <Icon as={FiClock} boxSize={10} />
         </GridItem>
-        <GridItem area={'wednesday'}>
+        <GridItem area='wednesday'>
           <Stack align='center' area={'wednesday'}>
             <Text as='b'>Wednesday</Text>
             <Grid>
@@ -57,7 +58,8 @@ const Dojo = () => {
                 <Text>6:30-8pm</Text>
               </Stack>
             </Grid>
-          </Stack></GridItem>
+          </Stack>
+        </GridItem>
       </Grid>
     </Container>
   )
