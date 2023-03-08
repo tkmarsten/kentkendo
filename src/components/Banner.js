@@ -6,7 +6,7 @@ const Banner = () => {
     <Box as='section' className='banner' bg='#252525' color='white'>
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={5} py='4rem' px='2rem'>
         <Box>
-          <Image alt="logo" src={`img/` + dojoData.logo} w={100} mb='1rem' />
+          <Image alt="logo" src={`img/` + dojoData.logo} w={100} />
           <Heading as='h1' className="mt-4">{dojoData.name} Kendo Club</Heading>
         </Box>
         <Text align='start' maxWidth={700}>

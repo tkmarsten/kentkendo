@@ -31,6 +31,9 @@ const Dojo = () => {
             <Link href={dojoData.website} isExternal><Button>Website</Button></Link>
           </Stack>
         </GridItem>
+        <GridItem area='clock'>
+          <Icon as={FiClock} boxSize={10} />
+        </GridItem>
         <GridItem area='monday'>
           <Stack align='center'>
             <Text as='b'>Monday</Text>
@@ -46,11 +49,8 @@ const Dojo = () => {
             </Grid>
           </Stack>
         </GridItem>
-        <GridItem area='clock'>
-          <Icon as={FiClock} boxSize={10} />
-        </GridItem>
         <GridItem area='wednesday'>
-          <Stack align='center' area={'wednesday'}>
+          <Stack align='center' area='wednesday'>
             <Text as='b'>Wednesday</Text>
             <Grid>
               <Stack direction='row' justify='space-between'>
