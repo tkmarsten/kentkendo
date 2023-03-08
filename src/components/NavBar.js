@@ -39,7 +39,13 @@ const NavBar = () => {
             <DrawerBody mt={5}>
               <Flex direction='column' align='center'>
                 <Link as={RouterLink} to='/' className='nav-link'>Home</Link>
-                <Link as={RouterLink} to='/about' className='nav-link'>About</Link>
+                <Menu closeOnSelect={true}>
+                  <MenuButton className='nav-link'>About</MenuButton>
+                  <MenuList>
+                    <Link as={RouterLink} to='/about'><MenuItem>Dojo</MenuItem></Link>
+                    <Link as={RouterLink} to='/class'><MenuItem>Class</MenuItem></Link>
+                  </MenuList>
+                </Menu>
                 <Link as={RouterLink} to='/faq' className='nav-link'>FAQ</Link>
                 <Menu closeOnSelect={true}>
                   <MenuButton className='nav-link'>Resources</MenuButton>

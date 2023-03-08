@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar'
 import Home from './Home'
 import About from './About'
+import Class from './Class'
 import FAQ from './FAQ'
 import Terms from './Terms'
 import Gallery from './Gallery.js'
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path='/class' element={<Class />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/terms" element={<Terms />} />
           <Route path='/gallery' element={<Gallery />} />
