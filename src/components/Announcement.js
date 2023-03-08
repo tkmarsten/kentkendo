@@ -6,7 +6,7 @@ const Announcement = () => {
       <Container py='2rem'>
         <Stack align='center'>
           <Heading as='h3' mb='1rem'>Announcements</Heading>
-          <Text>Winter quarter begins 4 January!</Text>
+          <Text>Spring quarter begins 27 March!</Text>
           <Text>Please register with the links below.</Text>
           <Text>Masks are not required, but preferred.</Text>
         </Stack>
