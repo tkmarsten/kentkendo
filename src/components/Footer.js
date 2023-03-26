@@ -8,16 +8,16 @@ const Footer = () => {
       <Container py='2rem' centerContent>
         <Grid templateColumns={{ base: '1fr', sm: 'repeat(2, 1fr)' }} align='center' gap={5} mb='2rem'>
           <GridItem>
-            <Image src={`img/` + dojoData.logo} alt="logo" w='50px' h='60px' />
-          </GridItem>
-          <GridItem>
             <Stack align='center'>
               <Heading as='h5' size='md'>Contact us</Heading>
               <Link href={`mailto:` + dojoData.email}><Icon as={FiMail} boxSize={8} /></Link>
             </Stack>
           </GridItem>
+          <GridItem>
+            <Image src={`img/` + dojoData.logo} alt="logo" w='50px' h='60px' />
+          </GridItem>
         </Grid>
-        <Text>&copy; 2023 {dojoData.dojo} Kendo Club</Text>
+        <Text>&copy; 2023 {dojoData.name} Kendo Club</Text>
       </Container>
     </Box>
   )

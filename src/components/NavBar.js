@@ -3,7 +3,7 @@ import { useRef } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import {
   Menu, MenuButton, MenuList, MenuItem, IconButton, Drawer, DrawerBody, DrawerOverlay,
-  DrawerContent, DrawerCloseButton, useDisclosure, Image, Link, Flex, Spacer
+  DrawerContent, DrawerCloseButton, useDisclosure, Image, Link, Flex, Text, Stack
 } from '@chakra-ui/react'
 import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 
@@ -12,17 +12,20 @@ const NavBar = () => {
   const btnRef = useRef()
 
   return (
-    <Flex as='nav' p={3}>
+    <Flex as='nav' p={2} align='center' justifyContent='space-between' >
       <Link as={RouterLink} to='/'>
-        <Image src={`img/` + dojoData.logo} alt="logo" w='35px' h='40px' />
+        <Stack direction='row'>
+          <Image src={`img/` + dojoData.logo} alt="logo" w='35px' h='40px' />
+          <Text fontSize={20} fontWeight={700} alignSelf='center'>Kent Kendo</Text>
+        </Stack>
       </Link>
-      <Spacer />
       <Menu>
         <MenuButton
           as={IconButton}
           aria-label='Options'
           icon={<HamburgerIcon />}
-          variant='outline'
+          variant='solid'
+          backgroundColor='blackAlpha.300'
           onClick={onOpen}
           ref={btnRef}
         />
@@ -30,7 +33,6 @@ const NavBar = () => {
           isOpen={isOpen}
           placement='right'
           onClose={onClose}
-          closeOnOverlayClick={true}
           finalFocusRef={btnRef}
         >
           <DrawerOverlay />
@@ -38,24 +40,19 @@ const NavBar = () => {
             <DrawerCloseButton />
             <DrawerBody mt={5}>
               <Flex direction='column' align='center'>
-                <Link as={RouterLink} to='/' className='nav-link'>Home</Link>
-                <Menu closeOnSelect={true}>
-                  <MenuButton className='nav-link'>About</MenuButton>
-                  <MenuList>
-                    <Link as={RouterLink} to='/about'><MenuItem>Dojo</MenuItem></Link>
-                    <Link as={RouterLink} to='/class'><MenuItem>Class</MenuItem></Link>
-                  </MenuList>
-                </Menu>
-                <Link as={RouterLink} to='/faq' className='nav-link'>FAQ</Link>
+                <Link as={RouterLink} to='/' className='nav-link' onClick={onClose}>Home</Link>
+                <Link as={RouterLink} to='/about' className='nav-link' onClick={onClose}>Club</Link>
+                <Link as={RouterLink} to='/class' className='nav-link' onClick={onClose}>Class</Link>
+                <Link as={RouterLink} to='/faq' className='nav-link' onClick={onClose}>FAQ</Link>
                 <Menu closeOnSelect={true}>
                   <MenuButton className='nav-link'>Resources</MenuButton>
                   <MenuList>
-                    <Link as={RouterLink} to='/terms'><MenuItem>Terms</MenuItem></Link>
-                    <Link href='https://youtu.be/cpidZRL5ZbI' isExternal><MenuItem>Warmup<ExternalLinkIcon mx='2px' /></MenuItem></Link>
+                    <Link as={RouterLink} to='/terms' onClick={onClose}><MenuItem>Terms</MenuItem></Link>
+                    <Link href='https://youtu.be/cpidZRL5ZbI' isExternal onClick={onClose}><MenuItem>Warmup<ExternalLinkIcon mx='2px' /></MenuItem></Link>
                   </MenuList>
                 </Menu>
-                <Link as={RouterLink} to='/gallery' className='nav-link'>Gallery</Link>
-                <Link href={dojoData.calendar} isExternal className='nav-link'>
+                <Link as={RouterLink} to='/gallery' className='nav-link' onClick={onClose}>Gallery</Link>
+                <Link href={dojoData.calendar} isExternal className='nav-link' onClick={onClose}>
                   Calendar <ExternalLinkIcon mx='2px' />
                 </Link>
               </Flex>

@@ -9,6 +9,10 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... } */
 
+:root {
+  --grey: #252525;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,14 +42,46 @@ nav {
   margin: 1rem;
 }
 
+.full-bleed {
+  box-shadow: 0 0 0 100vmax var(--grey);
+  clip-path: inset(0 -100vmax);
+  background-color: var(--grey);
+  color: white;
+}
+
 /* Index */
 header {
+  height: 100svh;
   height: 100vh;
   background: url("../public/img/banner-alt.jpg") no-repeat center center;
   background-size: cover;
   display: grid;
   place-content: center;
   color: white;
+}
+
+.class-banner {
+  height: 50svh;
+  height: 50vh;
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  color: white;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+  height: inherit;
+  background: url("../public/img/advanced.jpg") no-repeat center center;
+  background-size: cover;
+  filter: grayscale(1) brightness(40%);
 }
 
 .announcements,
@@ -80,4 +116,8 @@ header {
 footer {
   border-top: 10px solid;
   border-color: #00aeff;
+}
+
+ul {
+  list-style: none;
 }
