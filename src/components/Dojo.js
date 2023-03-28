@@ -1,5 +1,6 @@
 import dojoData from '../data/dojo.json'
-import { Container, Stack, Text, Button, Link } from '@chakra-ui/react'
+import { Container, Stack, Text, Link } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Dojo = () => {
   return (
@@ -9,10 +10,9 @@ const Dojo = () => {
         title="map">
       </iframe>
       <Stack align='center' mt='1rem'>
-        <Text>{dojoData.facility}</Text>
+        <Link href={dojoData.website} isExternal>{dojoData.facility} <ExternalLinkIcon mx='2px' /></Link>
         <Text>{dojoData.room}</Text>
         <Text>{dojoData.address}</Text>
-        <Link href={dojoData.website} isExternal><Button>Website</Button></Link>
       </Stack>
     </Container>
   )

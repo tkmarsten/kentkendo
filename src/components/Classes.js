@@ -9,7 +9,7 @@ const Classes = () => {
         Anyone regardless of background may start in our beginning class and progress to the advanced.
       </Text>
       <Link as={RouterLink} to='/class'>
-        <Button variant='outline' mt='1rem' mb='2rem'>Class curriculum</Button>
+        <Button mt='1rem' mb='2rem'>Class curriculum</Button>
       </Link>
       <Box className='class-banner'>
         <Box className='banner1' />
