@@ -16,6 +16,18 @@ const Classes = () => {
         <Box className='banner-text'>
           <Text mb='1rem'>Beginning</Text>
           <Text>We take beginners on a quarterly basis.</Text>
+          <Box mt='1rem' display='flex' flexDirection='column' gap={2}>
+            <Link href='https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=5833192' isExternal>
+              <Button color='black'>
+                Youth (7-14)
+              </Button>
+            </Link>
+            <Link href='https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=5835155' isExternal>
+              <Button color='black'>
+                Adult (15+)
+              </Button>
+            </Link>
+          </Box>
         </Box>
       </Box>
       <Box className='class-banner'>
@@ -23,6 +35,18 @@ const Classes = () => {
         <Box className='banner-text'>
           <Text mb='1rem'>Intermediate</Text>
           <Text>Beginners who complete their first quarter may move on to the intermediate class.</Text>
+          <Box mt='1rem' display='flex' flexDirection='column' gap={2}>
+            <Link href='https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=5833254' isExternal>
+              <Button color='black'>
+                Youth (7-14)
+              </Button>
+            </Link>
+            <Link href='https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=5835195' isExternal>
+              <Button color='black'>
+                Adult (15+)
+              </Button>
+            </Link>
+          </Box>
         </Box>
       </Box>
       <Box className='class-banner'>
@@ -30,6 +54,18 @@ const Classes = () => {
         <Box className='banner-text'>
           <Text mb='1rem'>Advanced</Text>
           <Text>For all that have progressed to wearing armor.</Text>
+          <Box mt='1rem' display='flex' flexDirection='column' gap={2}>
+            <Link href='https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=5833316' isExternal>
+              <Button color='black'>
+                Youth (7-14)
+              </Button>
+            </Link>
+            <Link href='https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=5835235' isExternal>
+              <Button color='black'>
+                Adult (15+)
+              </Button>
+            </Link>
+          </Box>
         </Box>
       </Box>
     </Box>
