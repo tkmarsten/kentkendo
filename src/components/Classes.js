@@ -32,7 +32,7 @@ const Classes = () => {
           <Text>For all that have progressed to wearing armor.</Text>
         </Box>
       </Box>
-    </Box >
+    </Box>
   )
 }
 
