@@ -1,0 +1,102 @@
+:root {
+  --grey: #252525;
+  --red: #f22626;
+  --cyan: #00aeff;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+header {
+  height: 100svh;
+  height: 100vh;
+}
+
+footer {
+  border-top: 10px solid;
+  border-color: #00aeff;
+}
+
+section {
+  margin: 100px 0;
+}
+
+.nav-link {
+  margin: 1rem;
+}
+
+.full-bleed {
+  box-shadow: 0 0 0 100vmax var(--grey);
+  clip-path: inset(0 -100vmax);
+  background-color: var(--grey);
+  color: white;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  object-position: 50% 50%;
+  position: relative;
+  isolation: isolate;
+  height: inherit;
+  color: white;
+  display: grid;
+  place-content: center;
+  filter: grayscale(0.5);
+}
+
+.bg-image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #252525;
+  opacity: 0.9;
+}
+
+.class-card {
+  height: 50svh;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.class-card > * {
+  padding: 20px;
+  transition: transform 1s;
+}
+
+.class-card > *:hover {
+  transform: scale(1.2);
+}
+
+.affimg {
+  width: 150px;
+  height: 150px;
+}
+
+/* FAQ */
+.terms {
+  min-height: 100vh;
+}
+
+.galleryCaption {
+  display: none;
+  color: white;
+}
+
+.galleryImg:hover {
+  filter: brightness(40%);
+}
+
+.galleryItem:hover .galleryCaption {
+  display: block;
+}

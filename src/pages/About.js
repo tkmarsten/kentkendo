@@ -1,4 +1,4 @@
-import Banner from '../components/Banner'
+import Banner from '../components/AboutBanner'
 import Affiliations from '../components/Affiliations'
 import { Box } from '@chakra-ui/react'
 

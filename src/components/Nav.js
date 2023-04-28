@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 
-const NavBar = () => {
+const Nav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
 
@@ -64,4 +64,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Nav

@@ -1,4 +1,5 @@
-import NavBar from '../components/NavBar'
+import '../App.css'
+import Nav from '../components/Nav'
 import Home from './Home'
 import About from './About'
 import Class from './Class'
@@ -12,7 +13,7 @@ import { Box } from '@chakra-ui/react'
 function App() {
   return (
     <Router>
-      <NavBar />
+      <Nav />
       <Box className="App">
         <Routes>
           <Route path="/" element={<Home />} />

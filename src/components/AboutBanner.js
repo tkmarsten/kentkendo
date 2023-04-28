@@ -1,9 +1,9 @@
 import dojoData from '../data/dojo.json'
 import { Box, SimpleGrid, Image, Heading, Text } from '@chakra-ui/react'
 
-const Banner = () => {
+const AboutBanner = () => {
   return (
-    <Box as='section' className='banner' bg='#252525' color='white'>
+    <Box as='section' className='AboutBanner' bg='#252525' color='white'>
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={5} py='4rem' px='2rem'>
         <Box>
           <Image alt="logo" src={`img/` + dojoData.logo} w={100} />
@@ -20,4 +20,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default AboutBanner
