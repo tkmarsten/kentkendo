@@ -2,6 +2,7 @@ import '../App.css'
 import Nav from '../components/Nav'
 import Home from './Home'
 import About from './About'
+import Register from './Registration'
 import Class from './Class'
 import FAQ from './FAQ'
 import Terms from './Terms'
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path='/class' element={<Class />} />
+          <Route path='/register' element={<Register />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/terms" element={<Terms />} />
           <Route path='/gallery' element={<Gallery />} />

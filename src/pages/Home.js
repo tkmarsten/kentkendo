@@ -26,7 +26,7 @@ const Home = () => {
               We offer classes for all skill ranges. Anyone regardless of age, gender, or background
               may start in our beginning class and progress to the advanced.
             </Text>
-            <Link as={RouterLink}>
+            <Link as={RouterLink} to='/register'>
               <Button>
                 Register now
               </Button>
