@@ -1,9 +1,11 @@
-import { Box, Icon, Text, Link, Button, Container } from '@chakra-ui/react'
+import dojoData from '../data/dojo.json'
+import { Stack, Text, Link, Box, Container, Icon, Button } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { FiClock } from 'react-icons/fi'
 
-const Schedule = () => {
+const Setting = () => {
   return (
-    <Box as='section' my='4rem'>
+    <Box as='section'>
       <Icon as={FiClock} boxSize={12} />
       <Container>
         <Box mb='1rem'>
@@ -30,8 +32,20 @@ const Schedule = () => {
           Google calendar
         </Button>
       </Link>
+
+      <Container>
+        <iframe
+          src={dojoData.map}
+          title='map'
+        />
+      </Container>
+      <Stack align='center' mt='1rem'>
+        <Link href={dojoData.website} isExternal>{dojoData.facility} <ExternalLinkIcon mx='2px' /></Link>
+        <Text>{dojoData.room}</Text>
+        <Text>{dojoData.address}</Text>
+      </Stack>
     </Box>
   )
 }
 
-export default Schedule
+export default Setting

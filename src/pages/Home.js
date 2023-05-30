@@ -1,8 +1,7 @@
 import Hero from '../components/Hero'
-import Dojo from '../components/Dojo'
 import Intro from '../components/Intro'
 import Classes from '../components/Classes'
-import Schedule from '../components/Schedule'
+import Setting from '../components/Setting'
 import dojoData from '../data/dojo.json'
 import { Link as RouterLink } from 'react-router-dom'
 import { Box, Container, Heading, Flex, Image, Text, Link, Button, Icon, SimpleGrid } from '@chakra-ui/react'
@@ -12,11 +11,10 @@ const Home = () => {
   return (
     <Box align='center'>
       <Hero />
-      <Container maxW={{ md: '80%' }}>
+      <Container className='Home'>
         <Intro />
         <Classes />
-        <Schedule />
-        <Dojo />
+        <Setting />
         <Flex as='section' direction={{ base: 'column-reverse', md: 'row' }} align='center'>
           <Container mt='2rem'>
             <Heading fontSize={24}>

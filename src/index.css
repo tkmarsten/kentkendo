@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 55px; /* Magic numbery, fix later */
 }
 
 body {
