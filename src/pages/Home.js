@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <Box align='center'>
       <Hero />
-      <Container className='Home'>
+      <Container className='Home' minWidth='min(100% - 30px, 80%)'>
         <Intro />
         <Classes />
         <Setting />

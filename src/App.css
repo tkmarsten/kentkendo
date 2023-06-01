@@ -1,7 +1,7 @@
 :root {
   --grey: #252525;
-  --red: #f22626;
-  --cyan: #00aeff;
+  --primary: #f22626;
+  --accent: #00aeff;
 }
 
 nav {
@@ -19,15 +19,12 @@ header {
 
 footer {
   border-top: 10px solid;
-  border-color: #00aeff;
+  border-color: var(--accent);
+  font-size: 14px;
 }
 
 section {
   padding: 2rem 0;
-}
-
-.Home {
-  max-width: min(100% - 30px, 80%);
 }
 
 .nav-link {
@@ -61,7 +58,7 @@ section {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: #252525;
+  background: var(--grey);
   opacity: 0.7;
 }
 
@@ -103,4 +100,21 @@ section {
 
 .galleryItem:hover .galleryCaption {
   display: block;
+}
+
+.weekday-name {
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+.weekday-body {
+  padding: 10px;
+}
+
+.weekday-content {
+  color: white;
+  background-color: var(--accent);
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 500;
 }

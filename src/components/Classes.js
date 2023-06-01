@@ -4,7 +4,7 @@ import { Box, Link, Flex, Heading } from '@chakra-ui/react'
 
 const Classes = () => {
   return (
-    <Box as='section'>
+    <Box as='section' className='Classes'>
       <Heading fontSize={24}>Classes</Heading>
       <Flex direction={{ base: 'column', md: 'row' }} align='center' justify='space-around' gap={5} mt='2rem'>
         <Box className='class-card'>
