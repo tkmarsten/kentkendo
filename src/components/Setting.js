@@ -4,19 +4,19 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { FiClock } from 'react-icons/fi'
 
 const Setting = () => {
-  const weekdays = ['M', 'Tu', 'W', 'Th', 'F', 'Sa', 'Su']
+  const weekdays = ['Monday', 'Wednesday']
 
   return (
     <Box as='section'>
       <Icon as={FiClock} boxSize={12} mb='2rem' />
-      <Grid templateColumns='repeat(7, minmax(10rem, 1fr))' overflow='scroll' outline='solid' outlineColor='gray.200'>
+      <Grid templateColumns='repeat(2, 1fr)' outline='solid' outlineColor='gray.200'>
         {weekdays.map((day) => (
           <GridItem className='weekday'>
             <Box className='weekday-name'>
               {day}
             </Box>
             <Box className='weekday-body'>
-              {(day === 'M') &&
+              {(day === 'Monday') &&
                 <>
                   <Box className='weekday-content' mb='10px'>
                     <Text>Beginning</Text>
@@ -28,7 +28,7 @@ const Setting = () => {
                   </Box>
                 </>
               }
-              {(day === 'W') &&
+              {(day === 'Wednesday') &&
                 <Box className='weekday-content'>
                   <Text>Advanced</Text>
                   <Text>6:30-8pm</Text>
