@@ -18,9 +18,10 @@ header {
 }
 
 footer {
+  background: var(--grey);
+  color: white;
   border-top: 10px solid;
   border-color: var(--accent);
-  font-size: 14px;
 }
 
 section {
@@ -103,8 +104,8 @@ section {
 }
 
 .weekday-name {
-  padding: 10px;
   background-color: #eeeeee;
+  padding: 10px;
 }
 
 .weekday-body {
@@ -114,6 +115,7 @@ section {
 .weekday-content {
   color: white;
   background-color: var(--accent);
+  max-width: 250px;
   border-radius: 5px;
   padding: 10px;
   font-weight: 500;
