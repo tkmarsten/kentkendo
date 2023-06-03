@@ -2,7 +2,7 @@ import dojoData from '../data/dojo.json'
 import { useRef } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import {
-  Menu, MenuButton, MenuList, MenuItem, IconButton, Drawer, DrawerBody, DrawerOverlay,
+  Menu, MenuButton, IconButton, Drawer, DrawerBody, DrawerOverlay,
   DrawerContent, DrawerCloseButton, useDisclosure, Image, Link, Flex, Text, Stack
 } from '@chakra-ui/react'
 import { HamburgerIcon, ExternalLinkIcon } from '@chakra-ui/icons'
@@ -45,15 +45,12 @@ const Nav = () => {
                 <Link as={RouterLink} to='/class' className='nav-link' onClick={onClose}>Class</Link>
                 <Link as={RouterLink} to='/register' className='nav-link' onClick={onClose}>Registration</Link>
                 <Link as={RouterLink} to='/faq' className='nav-link' onClick={onClose}>FAQ</Link>
-                <Menu closeOnSelect={true}>
-                  <MenuButton className='nav-link'>Resources</MenuButton>
-                  <MenuList>
-                    <Link as={RouterLink} to='/terms' onClick={onClose}><MenuItem>Terms</MenuItem></Link>
-                    <Link href='https://youtu.be/cpidZRL5ZbI' isExternal onClick={onClose}><MenuItem>Warmup<ExternalLinkIcon mx='2px' /></MenuItem></Link>
-                  </MenuList>
-                </Menu>
+                <Link as={RouterLink} to='/terms' className='nav-link' onClick={onClose}>Terms</Link>
                 <Link as={RouterLink} to='/gallery' className='nav-link' onClick={onClose}>Gallery</Link>
-                <Link href={dojoData.calendar} isExternal className='nav-link' onClick={onClose}>
+                <Link href='https://youtu.be/cpidZRL5ZbI' className='nav-link' onClick={onClose} isExternal>
+                  Warmup<ExternalLinkIcon mx='2px' />
+                </Link>
+                <Link href={dojoData.calendar} className='nav-link' onClick={onClose} isExternal>
                   Calendar <ExternalLinkIcon mx='2px' />
                 </Link>
               </Flex>
@@ -61,7 +58,7 @@ const Nav = () => {
           </DrawerContent>
         </Drawer>
       </Menu>
-    </Flex >
+    </Flex  >
   )
 }
 
