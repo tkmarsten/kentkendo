@@ -15,6 +15,7 @@ const Home = () => {
         <Intro />
         <Classes />
         <Setting />
+
         <Flex as='section' direction={{ base: 'column-reverse', md: 'row' }} align='center'>
           <Container mt='2rem'>
             <Heading fontSize={24}>
@@ -32,9 +33,10 @@ const Home = () => {
           </Container>
           <Image src='img/join.jpg' w={250}></Image>
         </Flex>
+
         <Box as='section'>
           <Heading fontSize={24} mb='2rem'>Still have questions?</Heading>
-          <SimpleGrid columns={{ base: 1, md: 2 }} gap={5} placeItems='center'>
+          <SimpleGrid columns={{ base: 1, md: 2 }} gap={5} placeItems='center' textAlign='start'>
             <Box maxW='300px'>
               <Heading fontSize={20} display='flex' alignItems='center' justifyContent='center' mb={1}>
                 <Icon as={FiInfo} boxSize={6} mr={1} />
@@ -57,6 +59,7 @@ const Home = () => {
             </Box>
           </SimpleGrid>
         </Box>
+
       </Container>
     </Box>
   )

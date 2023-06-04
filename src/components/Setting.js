@@ -1,5 +1,5 @@
 import dojoData from '../data/dojo.json'
-import { Stack, Text, Link, Box, Container, Icon, Button, Grid, GridItem } from '@chakra-ui/react'
+import { Stack, Text, Link, Box, Container, Icon, Grid, GridItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { FiClock } from 'react-icons/fi'
 
@@ -40,7 +40,7 @@ const Setting = () => {
       </Grid>
 
       <Container mt='2rem'>
-        <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}>
+        <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }} gap={4}>
           <GridItem>
             <iframe
               src={dojoData.map}
