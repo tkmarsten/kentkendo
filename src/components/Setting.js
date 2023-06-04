@@ -39,12 +39,6 @@ const Setting = () => {
         ))}
       </Grid>
 
-      <Link href='https://calendar.google.com/calendar/u/2?cid=a2VudGtlbmRvY2x1YkBnbWFpbC5jb20'>
-        <Button>
-          Google Calendar
-        </Button>
-      </Link>
-
       <Container mt='2rem'>
         <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' }}>
           <GridItem>

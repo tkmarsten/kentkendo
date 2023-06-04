@@ -1,6 +1,6 @@
 import dojoData from '../data/dojo.json'
 import { Link as RouterLink } from 'react-router-dom'
-import { Image, Icon, Link, Text, Box, Alert, AlertIcon, Grid, GridItem, Container, Flex, Stack } from '@chakra-ui/react'
+import { Image, Icon, Link, Text, Box, Alert, AlertIcon, Grid, GridItem, Container, Flex, Stack, Divider } from '@chakra-ui/react'
 import { LuMail } from 'react-icons/lu'
 import { SiGooglecalendar } from 'react-icons/si'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -8,9 +8,9 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 const Footer = () => {
   return (
     <>
-      <Box as='footer' py='2rem' fontSize={{ base: '14px' }} pb='4rem'>
+      <Box as='footer' py='2rem' fontSize={{ base: '14px' }}>
         <Container minWidth='min(100% - 30px, 80%)'>
-          <Grid templateColumns='repeat(4, 1fr)' gap={4}>
+          <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)' }} gap={4}>
             <GridItem>
               <Text fontWeight={800} color='gray.500'>Our Club</Text>
               <Flex direction='column'>
@@ -41,41 +41,40 @@ const Footer = () => {
                 </Link>
               </Flex>
             </GridItem>
+          </Grid>
+          <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)' }} gap={4} my='2rem'>
             <GridItem>
-              <Stack direction='column'>
-                <Box>
-                  <Text fontWeight={800} color='gray.500'>Practice Hours</Text>
-                  <Text>Monday</Text>
-                  <Text>Beginning - 6:30-7:15pm</Text>
-                  <Text>Intermediate - 7:15-8:00pm</Text>
-                  <br />
-                  <Text>Wednesday</Text>
-                  <Text>Advanced - 6:30-8:00pm</Text>
-                </Box>
-                <Box>
-                  <Text fontWeight={800} color='gray.500'>Location</Text>
-                  <Text>Kent Commons Community Center</Text>
-                  <Text>525 4th Ave N, Kent, WA 98032</Text>
-                </Box>
-              </Stack>
+              <Text fontWeight={800} color='gray.500'>Practice Hours</Text>
+              <Text fontWeight={800}>Monday</Text>
+              <Text>Beginning 6:30-7:15pm</Text>
+              <Text>Intermediate 7:15-8:00pm</Text>
+              <br />
+              <Text fontWeight={800}>Wednesday</Text>
+              <Text>Advanced 6:30-8:00pm</Text>
+            </GridItem>
+            <GridItem>
+              <Text fontWeight={800} color='gray.500'>Location</Text>
+              <Text>Kent Commons Community Center</Text>
+              <Text>525 4th Ave N, Kent, WA 98032</Text>
             </GridItem>
           </Grid>
-          <Flex justify='center'>
-            <Stack direction='row' gap={4} mr='auto'>
+          <Flex>
+            <Stack direction='row' gap={4}>
               <Flex direction='column' justify='center' align='center'>
-                <Link href={`mailto:` + dojoData.email}><Icon as={LuMail} boxSize={8} /></Link>
+                <Link href={`mailto:` + dojoData.email}><Icon as={LuMail} boxSize={6} /></Link>
                 <Text>Contact us</Text>
               </Flex>
               <Flex direction='column' justify='center' align='center'>
-                <Link href={dojoData.calendar}><Icon as={SiGooglecalendar} boxSize={8} /></Link>
+                <Link href={dojoData.calendar}><Icon as={SiGooglecalendar} boxSize={6} /></Link>
                 <Text>Google Calendar</Text>
               </Flex>
             </Stack>
-            <Stack gap={4} position='absolute' left='50%' transform='translate(-50%)'>
-              <Image src={`img/` + dojoData.logo} alt="logo" w='50px' h='60px' m='auto' />
-              <Text textAlign='center'>&copy; 2023 {dojoData.name} Kendo Club</Text>
-            </Stack>
           </Flex>
+          <Divider my='1rem' />
+          <Stack gap={4} mt='2rem'>
+            <Image src={`img/` + dojoData.logo} alt="logo" w='50px' h='60px' m='auto' />
+            <Text textAlign='center'>&copy; 2023 {dojoData.name} Kendo Club</Text>
+          </Stack>
         </Container>
       </Box >
       <Alert status='warning' color='black'>
