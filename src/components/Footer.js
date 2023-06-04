@@ -52,7 +52,7 @@ const Footer = () => {
               <Text fontWeight={800}>Wednesday</Text>
               <Text>Advanced 6:30-8:00pm</Text>
             </GridItem>
-            <GridItem>
+            <GridItem colSpan='2'>
               <Text fontWeight={800} color='gray.500'>Location</Text>
               <Text>Kent Commons Community Center</Text>
               <Text>525 4th Ave N, Kent, WA 98032</Text>

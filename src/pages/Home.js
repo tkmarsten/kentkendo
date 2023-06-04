@@ -21,7 +21,7 @@ const Home = () => {
               Ready to start?
             </Heading>
             <Text my='1rem'>
-              We offer classes for all skill ranges. Anyone regardless of age, gender, or background
+              Anyone regardless of age, gender, or background
               may start in our beginning class and progress to the advanced.
             </Text>
             <Link as={RouterLink} to='/register'>

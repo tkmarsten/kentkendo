@@ -1,6 +1,6 @@
 import { Link, Image, Heading } from '@chakra-ui/react'
 
-const AffImg = ({ img, url, caption, heading }) => {
+const AffImage = ({ img, url, caption, heading }) => {
   return (
     <Link href={url} isExternal>
       <Image class='affimg' src={`img/` + img} alt={caption} />
@@ -9,4 +9,4 @@ const AffImg = ({ img, url, caption, heading }) => {
   )
 }
 
-export default AffImg
+export default AffImage
