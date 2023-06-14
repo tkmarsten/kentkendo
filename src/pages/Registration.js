@@ -3,7 +3,7 @@ import { Box, Heading, Link, Grid, GridItem, Text, Stack, Button } from '@chakra
 
 const Registration = () => {
   return (
-    <Box textAlign='center'>
+    <Box as='section' textAlign='center'>
       <Grid gap={10}>
         {membershipData.map((section) => (
           <GridItem>
