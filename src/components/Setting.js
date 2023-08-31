@@ -11,8 +11,8 @@ const Setting = () => {
       <Icon as={FiClock} boxSize={12} mb='2rem' />
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
         <Box>
-          <Text>Summer Quarter</Text>
-          <Text>7 June, 2023 - 16 August, 2023</Text>
+          <Text>Autumn Quarter</Text>
+          <Text>6 Sept, 2023 - 13 Dec, 2023</Text>
         </Box>
         <Grid templateColumns='repeat(2, 1fr)' outline='solid' outlineColor='gray.200'>
           {weekdays.map((day) => (
