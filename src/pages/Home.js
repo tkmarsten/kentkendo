@@ -1,18 +1,18 @@
-import Hero from '../components/Hero'
-import Intro from '../components/Intro'
 import Classes from '../components/Classes'
 import Setting from '../components/Setting'
 import dojoData from '../data/dojo.json'
 import { Link as RouterLink } from 'react-router-dom'
 import { Box, Container, Heading, Flex, Image, Text, Link, Button, Icon, SimpleGrid } from '@chakra-ui/react'
 import { FiMessageSquare, FiInfo } from 'react-icons/fi'
+import Header from '../components/Header'
+import Location from '../components/Location'
 
 const Home = () => {
   return (
     <Box align='center'>
-      <Hero />
       <Container className='Home' minWidth='min(100% - 30px, 80%)'>
-        <Intro />
+        <Header />
+        <Location />
         <Classes />
         <Setting />
 
