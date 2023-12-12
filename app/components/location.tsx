@@ -21,14 +21,15 @@ export default function Location() {
         testings, and seminars.
       </p>
       <NextImage
-        src="/location.jpg"
+        src="/location.jpeg"
         width={1000}
         height={1000}
-        alt="An image of the main entrance of Federal Way Community Center"
+        alt="An image of the Kent Commons Community Center"
         className="mt-4 rounded-lg"
       />
       <Link
-        href="https://www.absherco.com/project/federal-way-community-center/"
+        href="https://www.kentwa.gov/departments/kent-parks/parks-places/kent-commons-community-center"
+        isExternal
         className="text-black text-xs italic underline block"
       >
         Image source
