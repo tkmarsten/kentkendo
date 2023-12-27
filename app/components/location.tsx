@@ -1,39 +1,40 @@
 import { Link, Button } from "@nextui-org/react";
 import { SiGooglemaps } from "react-icons/si";
 import NextImage from "next/image";
+import dojoData from "@/app/data/dojo.json";
 
 export default function Location() {
   return (
     <section id="location">
-      <p className="text-sm text-secondary">Location</p>
-      <p className="text-xl">Kent Dojo</p>
-      <p className="text-sm">
-        Our dojo is located in between the Showare Center and Kent Station at
-        the{" "}
-        <Link
-          href="https://itallhappenshere.org/"
-          className="underline text-black text-sm"
-        >
-          Kent Commons Community Center.
-        </Link>{" "}
-        Our club has been meeting in the Green River room for over 20 years,
-        also hosting many large federation events such as tournaments, grade
-        testings, and seminars.
-      </p>
-      <NextImage
-        src="/location.jpeg"
-        width={1000}
-        height={1000}
-        alt="An image of the Kent Commons Community Center"
-        className="mt-4 rounded-lg"
-      />
-      <Link
-        href="https://www.kentwa.gov/departments/kent-parks/parks-places/kent-commons-community-center"
-        isExternal
-        className="text-black text-xs italic underline block"
-      >
-        Image source
-      </Link>
+      <p className="text-sm text-secondary font-semibold">Location</p>
+      <div className="flex flex-col lg:flex-row-reverse gap-4 mt-2">
+        <div className="lg:basis-2/5">
+          <p className="text-xl lg:text-2xl font-medium">{`${dojoData.name} Dojo`}</p>
+          <p className="text-sm lg:text-base">
+            Our dojo is located in between the Showare Center and Kent Station
+            at the{" "}
+            <Link
+              href={dojoData.facilityWebsite}
+              className="underline text-black text-sm lg:text-base"
+              isExternal
+            >
+              Kent Commons Community Center.
+            </Link>{" "}
+            Our club has been meeting in the Green River room for over 20 years.
+            The facility is also host to many large federation events such as
+            tournaments, grade testings, and seminars.
+          </p>
+        </div>
+        <div>
+          <NextImage
+            src="/location.jpeg"
+            width={1000}
+            height={1000}
+            alt="An image of the main entrance of Federal Way Community Center"
+            className="rounded-lg"
+          />
+        </div>
+      </div>
       <div className="flex justify-center">
         <Button
           href="https://maps.app.goo.gl/roZBA2RAEvpUyt3o7"

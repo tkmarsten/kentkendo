@@ -1,16 +1,17 @@
 import { Divider, Link } from "@nextui-org/react";
 import { SiGmail, SiGooglecalendar } from "react-icons/si";
 import NextImage from "next/image";
+import dojoData from "@/app/data/dojo.json";
 
 export default function Footer() {
   return (
     <footer className="bg-neutral-800 text-white py-10">
-      <div className="max-w-screen-lg m-auto px-6">
+      <div className="max-w-screen-xl m-auto px-6">
         <div className="space-y-4 text-sm">
           <div className="basis-1/2">
             <p className="text-secondary">Location</p>
-            <p>Kent Commons Community Center</p>
-            <p>525 4th Ave N, Kent, WA 98030</p>
+            <p>{dojoData.facilityName}</p>
+            <p>{dojoData.address}</p>
           </div>
           <div className="basis-1/2">
             <p className="text-secondary">Practice Hours</p>
@@ -22,7 +23,7 @@ export default function Footer() {
           </div>
         </div>
         <Link
-          href="mailto:kentkendoclub@gmail.com"
+          href={`mailto:${dojoData.email}`}
           className="text-white text-sm mr-4 mt-4"
         >
           <div className="flex flex-col place-items-center">
@@ -30,10 +31,7 @@ export default function Footer() {
             <p>Contact</p>
           </div>
         </Link>
-        <Link
-          href="https://calendar.google.com/calendar/u/2?cid=a2VudGtlbmRvY2x1YkBnbWFpbC5jb20"
-          className="text-white text-sm"
-        >
+        <Link href={dojoData.calendar} className="text-white text-sm">
           <div className="flex flex-col place-items-center">
             <SiGooglecalendar className="text-xl" />
             <p>Google Calendar</p>
@@ -43,12 +41,12 @@ export default function Footer() {
         <div className="flex justify-center my-2">
           <NextImage
             src="/kent.gif"
-            alt="Kent Kendo logo"
+            alt={`${dojoData.name} Kendo logo`}
             width={50}
             height={50}
           />
         </div>
-        <p className="text-center">&copy; 2023 Kent Kendo Club</p>
+        <p className="text-center">&copy; 2023 {dojoData.name} Kendo Club</p>
       </div>
     </footer>
   );
