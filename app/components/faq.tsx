@@ -1,10 +1,11 @@
 "use client";
 import { Accordion, AccordionItem, Link, Button } from "@nextui-org/react";
+import dojoData from "@/app/data/dojo.json";
 
 export default function FAQ() {
   const data = [
     {
-      title: "When can I join kendo?",
+      title: "When am I able to start kendo?",
       body: "New student intake is during the first two weeks of every quarter. You may check our website or the parks department for starting dates. We typically start new quarters in January, March, June, and September.",
     },
     {
@@ -22,8 +23,8 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-16">
-      <p className="text-sm text-secondary font-medium">FAQs</p>
+    <section>
+      <p className="text-sm text-secondary font-semibold">FAQs</p>
       <Accordion variant="splitted" className="mt-2">
         {data.map((content, index) => (
           <AccordionItem
@@ -55,7 +56,7 @@ export default function FAQ() {
           </Button>
           <Button
             as={Link}
-            href="mailto:kentkendoclub@gmail.com"
+            href={`mailto:${dojoData.email}`}
             radius="sm"
             size="md"
             className="text-white font-medium bg-primary shadow"

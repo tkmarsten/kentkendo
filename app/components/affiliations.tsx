@@ -4,7 +4,7 @@ import { Link } from "@nextui-org/react";
 export default function Affiliations() {
   const data = [
     {
-      src: "/kent.gif",
+      src: "/logo.png",
       alt: "Kent Kendo Club logo",
       url: "https://www.kentkendo.org/",
     },
