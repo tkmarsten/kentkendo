@@ -26,6 +26,7 @@ import {
   FaNewspaper,
   FaPersonRunning,
   FaBook,
+  FaBookAtlas,
 } from "react-icons/fa6";
 import { SiGooglecalendar } from "react-icons/si";
 import dojoData from "@/app/data/dojo.json";
@@ -49,6 +50,7 @@ export default function Nav() {
       category: "Resources",
       links: [
         { text: "FAQ", link: "/faq", icon: <FaCircleQuestion /> },
+        { text: "Terminology", link: "/terms", icon: <FaBookAtlas /> },
         {
           text: "Calendar",
           link: dojoData.calendar,
@@ -155,7 +157,7 @@ export default function Nav() {
                     className={clsx(
                       "text-foreground-500 w-full justify-start px-2",
                       {
-                        "text-green-500": pathname === link.link,
+                        "text-primary": pathname === link.link,
                       }
                     )}
                   >

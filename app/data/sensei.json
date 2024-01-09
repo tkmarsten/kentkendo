@@ -3,6 +3,7 @@
     "name": "Curtis Marsten",
     "rank": "Renshi 6 Dan",
     "title": "Head Sensei",
+    "image": "#",
     "instruction": [
       {
         "role": "Head Sensei",
@@ -21,15 +22,16 @@
   {
     "name": "Vicki Marsten",
     "rank": "4 Dan",
-    "title": "Head Sensei",
+    "title": "Assistant Sensei",
+    "image": "#",
     "instruction": [
       {
-        "role": "Head Sensei",
+        "role": "Assistant Sensei",
         "dojo": "Kent Kendo Club",
         "time": "2001-Present"
       },
       {
-        "role": "Head Sensei",
+        "role": "Assistant Sensei",
         "dojo": "Federal Way Kendo Club",
         "time": "2009-Present"
       },
@@ -46,14 +48,14 @@
     ],
     "tournament": [
       {
-        "place": "2nd Place",
-        "division": "2 Dan and Up",
+        "place": "2nd",
+        "division": "Women's 2 Dan and Up",
         "taikai": "Steveston Taikai",
         "time": "1990"
       },
       {
-        "place": "1st Place",
-        "division": "2 Dan and Up",
+        "place": "1st",
+        "division": "Women's 2 Dan and Up",
         "taikai": "Steveston Taikai",
         "time": "1991"
       },
@@ -80,7 +82,8 @@
   {
     "name": "Tiarnan Marsten",
     "rank": "4 Dan",
-    "title": "Assistant Sensei / Coach",
+    "title": "Assistant Sensei",
+    "image": "tiarnan.jpg",
     "instruction": [
       {
         "role": "Assistant Sensei",
@@ -100,25 +103,25 @@
     ],
     "tournament": [
       {
-        "place": "3rd Place",
+        "place": "3rd",
         "division": "Boys Sr. Youth Individuals",
         "taikai": "14th AUSKF Championship",
         "time": "2017"
       },
       {
-        "place": "4th Place",
+        "place": "4th",
         "division": "Boys Jr. Youth Individuals",
         "taikai": "13th AUSKF Championship",
         "time": "2014"
       },
       {
-        "place": "3rd Place",
+        "place": "3rd",
         "division": "Boys 12-13 Individuals",
         "taikai": "3rd AUSKF Junior Open Championship",
         "time": "2012"
       },
       {
-        "place": "3rd Place",
+        "place": "3rd",
         "division": "Boys Jr. Youth Team",
         "taikai": "12th AUSKF Championship",
         "time": "2011"
@@ -132,7 +135,7 @@
       },
       {
         "role": "Taikai Co-chair",
-        "organization": "PNKF Annual Taikai",
+        "organization": "Annual PNKF Taikai",
         "time": "2023"
       },
       {
