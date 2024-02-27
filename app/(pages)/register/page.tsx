@@ -42,58 +42,80 @@ export default function Register() {
 
   return (
     <main className="min-h-screen space-y-20">
-      <div className="w-full flex flex-col md:flex-row text-black bg-secondary p-4 rounded-lg gap-4 justify-around">
-        <div>
+      <section>
+        <p className="text-4xl mb-4">Sign Up for Spring Quarter Now!</p>
+        <div className="grid lg:grid-cols-3 gap-10">
+          {data.map((data, index) => (
+            <Card key={index}>
+              <CardHeader>
+                <NextImage
+                  src={"/" + data.src + ".png"}
+                  alt="Shinai"
+                  width={60}
+                  height={60}
+                  className="aspect-square object-contain mr-4"
+                />
+                <div className="flex flex-col">
+                  <p className="text-xl">{data.title}</p>
+                  <p className="text-sm text-default-500">{data.day}</p>
+                  <p className="text-sm text-default-500">{data.time}</p>
+                </div>
+              </CardHeader>
+              <CardBody>
+                <p>
+                  Classes are for all ages. Youth and adults classes are
+                  combined.
+                </p>
+                <div className="flex gap-2 flex-col xl:flex-row my-2">
+                  <Button
+                    href={data.youth}
+                    as={Link}
+                    radius="sm"
+                    size="md"
+                    isExternal
+                    className="text-white font-medium p-2 bg-primary shadow mx-auto mb-2"
+                  >
+                    Register (7-14 years)
+                  </Button>
+                  <Button
+                    href={data.adult}
+                    as={Link}
+                    radius="sm"
+                    size="md"
+                    isExternal
+                    className="text-white font-medium p-2 bg-primary shadow mx-auto"
+                  >
+                    Register (15+ years)
+                  </Button>
+                </div>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
+      </section>
+      <section className="space-y-4">
+        <p className="text-4xl mb-4">2024 Schedule</p>
+        <div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
           <p className="text-sm">Current quarter</p>
-          <p>Autumn, 2023</p>
-          <p>September 18 - December 13</p>
+          <p>Winter</p>
+          <p>January 8 - March 18 (Beginning, Continuing)</p>
+          <p>January 3 - March 13 (Advanced)</p>
         </div>
-        <div>
-          <p className="text-sm">Next quarter</p>
-          <p>Winter, 2024</p>
-          <p>January 3 - March 18</p>
+        <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
+          <p>Spring</p>
+          <p>April 1 - June 3 (Beginning, Continuing)</p>
+          <p>April 3 - June 5 (Advanced)</p>
         </div>
-      </div>
-      <div className="grid lg:grid-cols-3 gap-10">
-        {data.map((data, index) => (
-          <Card key={index} className="relative overflow-visible">
-            <NextImage
-              src={"/" + data.src + ".png"}
-              alt="Shinai"
-              width={60}
-              height={20}
-              className="aspect-square object-contain absolute left-1/2 translate-x-[-50%] translate-y-[-50%] bg-slate-200 shadow-sm rounded-full"
-            />
-            <CardHeader className="justify-center pt-10">
-              <p className="text-lg">{data.title}</p>
-            </CardHeader>
-            <CardBody>
-              <p>{data.day}</p>
-              <p>{data.time}</p>
-              <Button
-                href={data.youth}
-                as={Link}
-                radius="sm"
-                size="md"
-                isExternal
-                className="text-white font-medium p-2 bg-primary shadow mx-auto mb-2"
-              >
-                Register (7-14 years)
-              </Button>
-              <Button
-                href={data.adult}
-                as={Link}
-                radius="sm"
-                size="md"
-                isExternal
-                className="text-white font-medium p-2 bg-primary shadow mx-auto"
-              >
-                Register (15+ years)
-              </Button>
-            </CardBody>
-          </Card>
-        ))}
-      </div>
+        <div className="bg-white rounded-md p-4 border-s-8 border-amber-400">
+          <p>Summer</p>
+          <p>June 10 - August 12 (Beginning, Continuing)</p>
+          <p>June 12 - August 14 (Advanced)</p>
+        </div>
+        <div className="bg-white rounded-md p-4 border-s-8 border-orange-500">
+          <p>Autumn</p>
+          <p>Dates tentative</p>
+        </div>
+      </section>
     </main>
   );
 }
