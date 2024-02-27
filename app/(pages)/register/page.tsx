@@ -49,7 +49,7 @@ export default function Register() {
             <Card key={index}>
               <CardHeader>
                 <NextImage
-                  src={"/" + data.src + ".png"}
+                  src={"/icons/" + data.src + ".png"}
                   alt="Shinai"
                   width={60}
                   height={60}
