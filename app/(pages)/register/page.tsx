@@ -43,7 +43,7 @@ export default function Register() {
   return (
     <main className="min-h-screen space-y-20">
       <section>
-        <p className="text-4xl mb-4">Sign Up for Spring Quarter Now!</p>
+        <p className="text-4xl mb-4">Winter Quarter Registration</p>
         <div className="grid lg:grid-cols-3 gap-10">
           {data.map((data, index) => (
             <Card key={index}>
