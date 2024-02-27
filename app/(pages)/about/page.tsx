@@ -9,7 +9,7 @@ export default function About() {
       <div className="flex flex-col lg:flex-row-reverse items-center">
         <div className="flex-1">
           <NextImage
-            src="/logo.png"
+            src="/logos/logo.png"
             width={200}
             height={100}
             alt="Logo"
