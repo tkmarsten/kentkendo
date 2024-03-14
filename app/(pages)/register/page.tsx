@@ -14,9 +14,9 @@ export default function Register() {
       time: "6:30-7:15pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=17492981&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945063&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=17495716&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938622&InterfaceParameter=WebTrac",
     },
     {
       src: "continuing",
@@ -24,9 +24,9 @@ export default function Register() {
       time: "7:15-8pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=17493009&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945123&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=17495736&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938666&InterfaceParameter=WebTrac",
     },
     {
       src: "advanced",
@@ -34,16 +34,19 @@ export default function Register() {
       time: "6:30-8pm",
       day: "Wednesday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=17493038&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945187&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=17495756&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938710&InterfaceParameter=WebTrac",
     },
   ];
 
   return (
     <main className="min-h-screen space-y-20">
       <section>
-        <p className="text-4xl mb-4">Winter Quarter Registration</p>
+        <p className="text-4xl">Spring Quarter Registration Open Now!</p>
+        <p className="text-neutral-500 mb-4">
+          Classes are for all ages. Youth and adults classes are combined.
+        </p>
         <div className="grid lg:grid-cols-3 gap-10">
           {data.map((data, index) => (
             <Card key={index}>
@@ -62,10 +65,6 @@ export default function Register() {
                 </div>
               </CardHeader>
               <CardBody>
-                <p>
-                  Classes are for all ages. Youth and adults classes are
-                  combined.
-                </p>
                 <div className="flex gap-2 flex-col xl:flex-row my-2">
                   <Button
                     href={data.youth}
@@ -99,7 +98,7 @@ export default function Register() {
           <p className="text-sm">Current quarter</p>
           <p>Winter</p>
           <p>January 8 - March 18 (Beginning, Continuing)</p>
-          <p>January 3 - March 13 (Advanced)</p>
+          <p>January 3 - March 20 (Advanced)</p>
         </div>
         <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
           <p>Spring</p>
@@ -113,7 +112,8 @@ export default function Register() {
         </div>
         <div className="bg-white rounded-md p-4 border-s-8 border-orange-500">
           <p>Autumn</p>
-          <p>Dates tentative</p>
+          <p>September 16 - December 16 (Beginning, Continuing)</p>
+          <p>September 11 - December 18 (Advanced)</p>
         </div>
       </section>
     </main>
