@@ -94,13 +94,13 @@ export default function Register() {
       </section>
       <section className="space-y-4">
         <p className="text-4xl mb-4">2024 Schedule</p>
-        <div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
-          <p className="text-sm">Current quarter</p>
+        {/*<div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
           <p>Winter</p>
           <p>January 8 - March 18 (Beginning, Continuing)</p>
           <p>January 3 - March 20 (Advanced)</p>
-        </div>
+          </div>*/}
         <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
+          <p className="text-sm">Current quarter</p>
           <p>Spring</p>
           <p>April 1 - June 3 (Beginning, Continuing)</p>
           <p>April 3 - June 5 (Advanced)</p>
