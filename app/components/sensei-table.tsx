@@ -23,7 +23,7 @@ export default function SenseiTable() {
         >
           <div className="flex flex-col items-center">
             <Image
-              src={`/${sensei.image}`}
+              src={`/sensei/${sensei.image}`}
               width={200}
               height={200}
               fallbackSrc="https://via.placeholder.com/200x200"
@@ -71,7 +71,7 @@ export default function SenseiTable() {
                       Division
                     </TableColumn>
                     <TableColumn className="hidden lg:table-cell">
-                      Accolades
+                      Tournament
                     </TableColumn>
                     <TableColumn>Year</TableColumn>
                   </TableHeader>
@@ -111,7 +111,7 @@ export default function SenseiTable() {
                     {sensei.admin.map((row, index) => (
                       <TableRow key={index}>
                         <TableCell className="font-medium">
-                          {row.role}{" "}
+                          {row.role}
                           <dl className="lg:hidden font-normal">
                             <dt className="sr-only">Dojo</dt>
                             <dd className="text-gray-500 mt-1">
