@@ -14,9 +14,9 @@ export default function Register() {
       time: "6:30-7:15pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945063&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945093&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938622&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938644&InterfaceParameter=WebTrac",
     },
     {
       src: "continuing",
@@ -24,9 +24,9 @@ export default function Register() {
       time: "7:15-8pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945123&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945156&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938666&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938688&InterfaceParameter=WebTrac",
     },
     {
       src: "advanced",
@@ -34,16 +34,16 @@ export default function Register() {
       time: "6:30-8pm",
       day: "Wednesday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945187&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945217&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938710&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938733&InterfaceParameter=WebTrac",
     },
   ];
 
   return (
     <main className="min-h-screen space-y-20">
       <section>
-        <p className="text-4xl">Spring Quarter Registration Open Now!</p>
+        <p className="text-4xl">Summer Quarter Registration Open Now!</p>
         <p className="text-neutral-500 mb-4">
           Classes are for all ages. Youth and adults classes are combined.
         </p>
