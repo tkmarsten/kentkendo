@@ -28,8 +28,10 @@ export default function SenseiTable() {
                   <dd className="text-gray-500 mt-1"></dd>
                 </dl>
               </TableCell>
-              <TableCell className="hidden lg:table-cell"></TableCell>
-              <TableCell></TableCell>
+              <TableCell className="hidden lg:table-cell">
+                Placeholder
+              </TableCell>
+              <TableCell>Placeholder</TableCell>
             </TableRow>
           </TableBody>
         </Table>
