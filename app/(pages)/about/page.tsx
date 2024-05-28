@@ -1,6 +1,6 @@
 "use client";
 import NextImage from "next/image";
-import SenseiTable from "@/app/components/sensei-table";
+import SenseiCards from "@/app/components/sensei-cards";
 import dojoData from "@/app/data/dojo.json";
 
 export default function About() {
@@ -21,7 +21,7 @@ export default function About() {
         </p>
       </div>
       <section>
-        <p className="text-sm text-secondary font-semibold">About Us</p>
+        <p className="text-secondary font-semibold">About Us</p>
         <p>
           Kent Kendo Club was established in 2001, and was originally the Renton
           Kendo Club. The club has been providing instruction of kendo through
@@ -30,13 +30,8 @@ export default function About() {
         </p>
       </section>
       <section>
-        <p className="text-sm text-secondary font-semibold">Instructors</p>
-        <p>
-          Our head sensei both have over 40 years of kendo experience. This also
-          includes many years of experience teaching both at the local level and
-          federation level for the Pacific Northwest.
-        </p>
-        <SenseiTable />
+        <p className="text-secondary font-semibold">Instructors</p>
+        <SenseiCards />
       </section>
     </main>
   );
