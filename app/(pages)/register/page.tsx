@@ -14,9 +14,9 @@ export default function Register() {
       time: "6:30-7:15pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945093&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28105092&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938644&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28099928&InterfaceParameter=WebTrac",
     },
     {
       src: "continuing",
@@ -24,9 +24,9 @@ export default function Register() {
       time: "7:15-8pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945156&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28105121&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938688&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28099950&InterfaceParameter=WebTrac",
     },
     {
       src: "advanced",
@@ -34,9 +34,9 @@ export default function Register() {
       time: "6:30-8pm",
       day: "Wednesday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21945217&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28105150&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=21938733&InterfaceParameter=WebTrac",
+        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28883207&InterfaceParameter=WebTrac",
     },
   ];
 
@@ -98,7 +98,7 @@ export default function Register() {
           <p>Winter</p>
           <p>January 8 - March 18 (Beginning, Continuing)</p>
           <p>January 3 - March 20 (Advanced)</p>
-          </div>*/}
+          </div>
         <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
           <p className="text-sm">Current quarter</p>
           <p>Spring</p>
@@ -109,10 +109,12 @@ export default function Register() {
           <p>Summer</p>
           <p>June 10 - August 12 (Beginning, Continuing)</p>
           <p>June 12 - August 14 (Advanced)</p>
-        </div>
+        </div>*/}
         <div className="bg-white rounded-md p-4 border-s-8 border-orange-500">
+          <p className="text-sm">Current quarter</p>
           <p>Autumn</p>
-          <p>September 16 - December 16 (Beginning, Continuing)</p>
+          <p>September 23 - December 16 (Beginning)</p>
+          <p>September 16 - December 16 (Continuing)</p>
           <p>September 11 - December 18 (Advanced)</p>
         </div>
       </section>
