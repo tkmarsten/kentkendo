@@ -6,9 +6,7 @@ import {
   CardBody,
   CardFooter,
   Divider,
-  useDisclosure,
   Button,
-  Link,
 } from "@nextui-org/react";
 import data from "@/app/data/sensei.json";
 

@@ -39,6 +39,7 @@ export default function Nav() {
       category: "Club",
       links: [
         { text: "About", link: "/about", icon: <FaCircleInfo /> },
+        { text: "Sensei", link: "/sensei", icon: <FaCircleInfo /> },
         { text: "News", link: "/news", icon: <FaNewspaper /> },
       ],
     },
