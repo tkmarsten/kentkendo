@@ -29,10 +29,6 @@ export default function About() {
           center for over 20 years now!
         </p>
       </section>
-      <section>
-        <p className="text-secondary font-semibold">Instructors</p>
-        <SenseiCards />
-      </section>
     </main>
   );
 }
