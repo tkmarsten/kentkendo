@@ -14,9 +14,9 @@ export default function Register() {
       time: "6:30-7:15pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28105092&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33088449&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28099928&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33092946&InterfaceParameter=WebTrac",
     },
     {
       src: "continuing",
@@ -24,9 +24,9 @@ export default function Register() {
       time: "7:15-8pm",
       day: "Monday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28105121&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33088480&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28099950&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33092969&InterfaceParameter=WebTrac",
     },
     {
       src: "advanced",
@@ -34,16 +34,16 @@ export default function Register() {
       time: "6:30-8pm",
       day: "Wednesday",
       youth:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28105150&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33088510&InterfaceParameter=WebTrac",
       adult:
-        "https://web2.myvscloud.com/wbwsc/wakentwt.wsc/iteminfo.html?Module=AR&FMID=28883207&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33092992&InterfaceParameter=WebTrac",
     },
   ];
 
   return (
     <main className="min-h-screen space-y-20">
       <section>
-        <p className="text-4xl">Summer Quarter Registration Open Now!</p>
+        <p className="text-4xl">Winter Quarter Registration Open Now!</p>
         <p className="text-neutral-500 mb-4">
           Classes are for all ages. Youth and adults classes are combined.
         </p>
@@ -93,24 +93,25 @@ export default function Register() {
         </div>
       </section>
       <section className="space-y-4">
-        <p className="text-4xl mb-4">2024 Schedule</p>
-        {/*<div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
-          <p>Winter</p>
-          <p>January 8 - March 18 (Beginning, Continuing)</p>
-          <p>January 3 - March 20 (Advanced)</p>
-          </div>
-        <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
+        <p className="text-4xl mb-4">2025 Schedule</p>
+        <div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
           <p className="text-sm">Current quarter</p>
+          <p>Winter</p>
+          <p>January 6 - March 17 (Beginning, Continuing)</p>
+          <p>January 8 - March 19 (Advanced)</p>
+        </div>
+        <div className="bg-white rounded-md p-4 border-s-8 border-green-600 hidden">
+          <p className="text-sm hidden">Current quarter</p>
           <p>Spring</p>
           <p>April 1 - June 3 (Beginning, Continuing)</p>
           <p>April 3 - June 5 (Advanced)</p>
         </div>
-        <div className="bg-white rounded-md p-4 border-s-8 border-amber-400">
+        <div className="bg-white rounded-md p-4 border-s-8 border-amber-400 hidden">
           <p>Summer</p>
           <p>June 10 - August 12 (Beginning, Continuing)</p>
           <p>June 12 - August 14 (Advanced)</p>
-        </div>*/}
-        <div className="bg-white rounded-md p-4 border-s-8 border-orange-500">
+        </div>
+        <div className="bg-white rounded-md p-4 border-s-8 border-orange-500 hidden">
           <p className="text-sm">Current quarter</p>
           <p>Autumn</p>
           <p>September 23 - December 16 (Beginning)</p>
