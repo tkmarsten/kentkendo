@@ -14,9 +14,9 @@ export default function Register() {
       time: "6:30-7:15pm",
       day: "Monday",
       youth:
-        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33088449&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=36623358&InterfaceParameter=WebTrac",
       adult:
-        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33092946&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=36617150&InterfaceParameter=WebTrac",
     },
     {
       src: "continuing",
@@ -24,9 +24,9 @@ export default function Register() {
       time: "7:15-8pm",
       day: "Monday",
       youth:
-        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33088480&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=36623425&InterfaceParameter=WebTrac",
       adult:
-        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33092969&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=36617200&InterfaceParameter=WebTrac",
     },
     {
       src: "advanced",
@@ -34,16 +34,16 @@ export default function Register() {
       time: "6:30-8pm",
       day: "Wednesday",
       youth:
-        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33088510&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=36623491&InterfaceParameter=WebTrac",
       adult:
-        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=33092992&InterfaceParameter=WebTrac",
+        "https://wakentweb.myvscloud.com/webtrac/web/iteminfo.html?Module=AR&FMID=36617250&InterfaceParameter=WebTrac",
     },
   ];
 
   return (
     <main className="min-h-screen space-y-20">
       <section>
-        <p className="text-4xl">Winter Quarter Registration Open Now!</p>
+        <p className="text-4xl">Spring Quarter Registration Open Now!</p>
         <p className="text-neutral-500 mb-4">
           Classes are for all ages. Youth and adults classes are combined.
         </p>
@@ -94,22 +94,22 @@ export default function Register() {
       </section>
       <section className="space-y-4">
         <p className="text-4xl mb-4">2025 Schedule</p>
-        <div className="bg-white rounded-md p-4 border-s-8 border-indigo-700">
+        <div className="bg-white rounded-md p-4 border-s-8 border-indigo-700 hidden">
           <p className="text-sm">Current quarter</p>
           <p>Winter</p>
           <p>January 6 - March 17 (Beginning, Continuing)</p>
           <p>January 8 - March 19 (Advanced)</p>
         </div>
-        <div className="bg-white rounded-md p-4 border-s-8 border-green-600 hidden">
-          <p className="text-sm hidden">Current quarter</p>
+        <div className="bg-white rounded-md p-4 border-s-8 border-green-600">
+          <p className="text-sm">Current quarter</p>
           <p>Spring</p>
-          <p>April 1 - June 3 (Beginning, Continuing)</p>
-          <p>April 3 - June 5 (Advanced)</p>
+          <p>March 31 - June 2 (Beginning, Continuing)</p>
+          <p>April 2 - June 4 (Advanced)</p>
         </div>
-        <div className="bg-white rounded-md p-4 border-s-8 border-amber-400 hidden">
+        <div className="bg-white rounded-md p-4 border-s-8 border-amber-400">
           <p>Summer</p>
-          <p>June 10 - August 12 (Beginning, Continuing)</p>
-          <p>June 12 - August 14 (Advanced)</p>
+          <p>June 9 - August 11 (Beginning, Continuing)</p>
+          <p>June 11 - August 13 (Advanced)</p>
         </div>
         <div className="bg-white rounded-md p-4 border-s-8 border-orange-500 hidden">
           <p className="text-sm">Current quarter</p>
